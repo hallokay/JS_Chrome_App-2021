@@ -5,20 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="" id="name_form" class="name_form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="이름을 입력하세요"
-      />
-      <button>Login</button>
-    </form>
-    <h1 class="greeting hidden"></h1>
+    <section class="clock_container">
+      <h1>00:00:00</h1>
+    </section>
+    <!-- // clock_container-->
+
+    <section class="username_container">
+      <form action="" id="name_form" class="name_form hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="이름을 입력하세요"
+        />
+        <button>Login</button>
+      </form>
+      <h2 class="greeting hidden"></h2>
+    </section>
+    <!-- // username_container-->
+
+        <section class="todo_container">
+      <form action="" id="todo_form" class="todo_form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="할일을 입력하세요"
+        />
+        <button>+</button>
+      </form>
+
+      <ul id="todo_list">
+
+      </ul>
+    </section>
+    <!-- // todo_container-->
+
+    <div class="quote">
+      <span><!-- 명언 --></span>
+      <span><!-- 이름 --></span>
+    </div>
+    <!-- //quote -->
 
     <script src="./username.js"></script>
+    <script src="./clock.js"></script>
+    <script src="./quote.js"></script>
+    <script src="./todo.js"></script>
+    <script>
+      // bg img
+      const bg = document.createElement("img");
+      bg.className = "bg";
+
+      const Img = 4;
+      const randomNum = Math.floor(Math.random() * Img);
+      console.log(randomNum);
+      bg.src = `img/${randomNum}.jpg`;
+      document.body.appendChild(bg);
+
+    </script>
   </body>
 </html>

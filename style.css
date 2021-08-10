@@ -1,4 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+    
+}
+/* ================ BG =========== */
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-fit: cover;
+}
+
+
+/* ================ CLOCK =========== */
+
+.clock_container h1 {
+       font-size: 5rem;
+}
+
+
+/* ================ USER NAME =========== */
 .hidden {
     display: none;
 }
+
