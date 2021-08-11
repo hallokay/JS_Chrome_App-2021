@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    color: aliceblue;
+    color: #444;
     
 }
 /* ================ BG =========== */
@@ -38,3 +39,22 @@ body {
     display: none;
 }
 
+/* ======================= Todo =================== */
+
+ul {
+    list-style: none;
+    background: rgba(0, 0, 0, .5);
+    padding: 1rem;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+li span{
+    flex: 1;
+}
